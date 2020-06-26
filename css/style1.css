@@ -299,7 +299,7 @@ h1 {
 }
 
 .sm-timeline-item::before {
-    content: attr(date-is);
+    content: attr(year-is);
     position: absolute;
     left: 2em;
     font-weight: bold;
@@ -307,7 +307,7 @@ h1 {
     display: block;
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
-    font-size: .785rem;
+    font-size: 15px;
 }
 
 .sm-timeline-item::after {
