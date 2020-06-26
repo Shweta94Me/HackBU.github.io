@@ -3,6 +3,16 @@ $(document).ready(function(){
     $('.menu-item').click(function(){
         $('#menu-open').prop('checked', false);
     });
+    $(window).scroll(function () {
+        if ($(window).scrollTop() >= 100) {
+        $('.menu').css('opacity','0.7');
+        } else {
+        $('.menu').css('opacity','1');
+        }
+        });
+    // $('.menu').hover(function(){
+    //     $('.menu').css('opacity','1');
+    // })
   });
 // let $content = $('.sm-container')
 

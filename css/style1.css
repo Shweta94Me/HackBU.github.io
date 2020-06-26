@@ -7,7 +7,9 @@ body {
 a {
     color: inherit;
 }
-
+p{
+    font-size: large;
+}
 h1,
 h2,
 h3,
@@ -200,16 +202,34 @@ h1 {
 .fa-facebook {
     background: #3B5998;
     color: white;
+    padding: 15px !important;
+    font-size: 25px !important;
+    width: 50px;
+    text-align: center !important;
+    text-decoration: none;
+    margin: 5px 2px;
 }
 
 .fa-linkedin {
     background: #007bb5;
     color: white;
+    padding: 15px !important;
+    font-size: 25px !important;
+    width: 50px;
+    text-align: center !important;
+    text-decoration: none;
+    margin: 5px 2px;
 }
 
 .fa-github {
     background: black;
     color: white;
+    padding: 15px !important;
+    font-size: 25px !important;
+    width: 50px;
+    text-align: center !important;
+    text-decoration: none;
+    margin: 5px 2px;
 }
 .sm-container {
     vertical-align: middle;
@@ -224,6 +244,9 @@ h1 {
     height: 70%;
     /* margin-top: 50px; */
     padding: 10px;
+    border-radius: 50%;
+    border: 5px solid aquamarine;
+    margin: 2px;
 }
 
 .sm-left-div {
@@ -231,24 +254,36 @@ h1 {
     display: inline-block;
     vertical-align: top;
     padding: 20px;
-    width: 600px;
+    width: 550px;
 }
 
 .sm-right-div {
     display: inline-block;
-    width: 600px;
+    width: 650px;
     padding: 20px;
+    margin-top: 5%;
 }
-
+.sm-text-highlight{
+    font-weight: bold;
+    font-size: 70px;
+    color: palegreen;
+}
 .sm-btn {
     border: none;
     background-color: aquamarine;
-    padding: 10px 20px 10px 8px;
+    padding: 10px 10px 10px 10px;
     font-size: 20px;
     cursor: pointer;
     display: inline-block;
     color: black;
     font-weight: bold;
+}
+.fa-external-link{
+    color: black;
+    font-size: 25px !important;
+    width: 30px;
+    text-align: center !important;
+    text-decoration: none;
 }
 
 /*Start Timeline*/
@@ -372,7 +407,7 @@ textarea {
 }
 /*End Contact*/
 /* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1024px) {
     .menu {
         height: 85px;
     }
@@ -383,8 +418,49 @@ textarea {
     }
 
     .sm-profile-img {
-        width: 70% !important;
-        height: 70% !important;
+        width: 60% !important;
+        height: 60% !important;
+    }
+
+    .sm-left-div,
+    .sm-right-div {
+        width: 100%;
+    }
+
+    .menu-open:checked+.menu-open-button {
+        transform: scale(0.9, 0.9) translate3d(0, 0, 0);
+    }
+
+    .menu-open:checked~.menu-item:nth-child(3) {
+        transform: scale(0.9, 0.9) translate3d(80px, 0, 0);
+    }
+
+    .menu-open:checked~.menu-item:nth-child(4) {
+        transform: scale(0.9, 0.9) translate3d(160px, 0, 0);
+    }
+
+    .menu-open:checked~.menu-item:nth-child(5) {
+        transform: scale(0.9, 0.9) translate3d(240px, 0, 0);
+    }
+
+    .menu-open:checked~.menu-item:nth-child(6) {
+        transform: scale(0.9, 0.9) translate3d(320px, 0, 0);
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .menu {
+        height: 85px;
+    }
+
+    .sm-bg-text {
+        margin: 0 auto;
+        top: 10%;
+    }
+
+    .sm-profile-img {
+        width: 60% !important;
+        height: 60% !important;
     }
 
     .sm-left-div,
@@ -430,10 +506,13 @@ textarea {
         width: 70% !important;
         height: 70% !important;
     }
-
+    .sm-text-highlight{
+        font-size: larger;
+    }
     .sm-left-div,
     .sm-right-div {
         width: 100%;
+        margin-top: 0px;
     }
     .sm-timeline-item:last-child{
         border-width: thick;
