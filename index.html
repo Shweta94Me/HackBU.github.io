@@ -20,10 +20,14 @@
       <span class="hamburger hamburger-3"></span>
     </label>
 
-    <a href="#home" class="menu-item" data-toggle="tooltip" data-placement="bottom" title="Home"> <i class="fa fa-home"></i> </a>
-    <a href="#about" class="menu-item" data-toggle="tooltip" data-placement="bottom" title="About"> <i class="fa fa-calendar"></i> </a>
-    <a href="#portfolio" class="menu-item" data-toggle="tooltip" data-placement="bottom" title="Portfolio"> <i class="fa fa-code"></i> </a>
-    <a href="#contact" class="menu-item" data-toggle="tooltip" data-placement="bottom" title="Contact"> <i class="fa fa-envelope"></i> </a>
+    <a href="#home" class="menu-item" data-toggle="tooltip" data-placement="bottom" title="Home"> <i
+        class="fa fa-home"></i> </a>
+    <a href="#about" class="menu-item" data-toggle="tooltip" data-placement="bottom" title="About"> <i
+        class="fa fa-calendar"></i> </a>
+    <a href="#portfolio" class="menu-item" data-toggle="tooltip" data-placement="bottom" title="Portfolio"> <i
+        class="fa fa-code"></i> </a>
+    <a href="#contact" class="menu-item" data-toggle="tooltip" data-placement="bottom" title="Contact"> <i
+        class="fa fa-envelope"></i> </a>
 
   </nav>
   <div class="sm-container" id="home" style="margin-top:105px;">
@@ -36,15 +40,17 @@
       </div>
     </div>
     <div class="sm-right-div">
-      <h2>Hello everybody, I am <p class="sm-text-highlight">SHWETA MESTRY.</p></h2>
+      <h2>Hello everybody, I am <p class="sm-text-highlight">SHWETA MESTRY.</p>
+      </h2>
       <p>Computer Science Graduate Student at Binghamton University</p>
-      <p><b>Experienced Software Developer, believe in making user centric solution which simplifies the process.</b></p>
+      <p><b>Experienced Software Developer, believe in making user centric solution which simplifies the process.</b>
+      </p>
       <p><button class="sm-btn"><i class="fa fa-external-link" style="padding:0px !important"></i> Resume</button></p>
     </div>
   </div>
   <div class="sm-container" id="about" style="padding:30px;">
     <h2>About</h2>
-    <div class="sm-timeline-item" year-is='2019 - Present' >
+    <div class="sm-timeline-item" year-is='2019 - Present'>
       <h3>Pursing Master's of Computer Science at Binghamton University, NY, USA</h3>
       <p>
         I'm speaking with myself, number one, because I have a very good brain and I've said a lot of things. I write
@@ -87,7 +93,29 @@
                   <h4 class="card-title">Card title</h4>
                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
                     card's content.</p>
-                  <a class="btn btn-primary">Button</a>
+                  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+                  More
+                  </button>
+                  <!-- Modal -->
+                  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+                    aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          ...
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -232,7 +260,8 @@
       <p><input type="hidden" name="_subject" value="Contact request from personal website" /></p>
       <p><textarea class="sm-input sm-padding-16" name="message" placeholder="Your message" required></textarea></p>
       <p>
-        <button class="sm-btn" type="submit"><i class="fa fa-paper-plane" style="padding:0px !important"></i> Send Message</button>
+        <button class="sm-btn" type="submit"><i class="fa fa-paper-plane" style="padding:0px !important"></i> Send
+          Message</button>
       </p>
     </form>
   </div>
