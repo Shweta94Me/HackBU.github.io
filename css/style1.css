@@ -296,7 +296,7 @@ h1 {
 
 /*Start Timeline*/
 .sm-timeline-item {
-    padding: 3em 2em 2em;
+    padding: 3em 2em 1em;
     position: relative;
     /* color: rgba(0, 0, 0, 0.7); */
     border-left: 3px solid rgba(255, 255, 255, 1.3);
@@ -551,7 +551,8 @@ textarea {
     }
 
     .sm-timeline-item:last-child {
-        border-width: thick;
+        /* border-width: thick; */
+        border-left-width: thick;
     }
 
     .menu-open:checked+.menu-open-button {
