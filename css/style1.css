@@ -24,12 +24,22 @@ h4 {
 h1 {
     font-size: 3em;
 }
-
+h5{
+    color: lightgreen;
+}
+ul{
+    list-style-type: none;
+}
+#sm-menu-block{
+    display: block;
+}
+#sm-menu-block-mobile{
+    display: none;
+}
 .menu {
     -webkit-filter: url("#shadowed-goo");
     filter: url("#shadowed-goo");
 }
-
 .menu-item,
 .menu-open-button {
     background: #ffc107;
@@ -49,7 +59,12 @@ h1 {
     transition: transform ease-out 200ms;
     transition: transform ease-out 200ms, -webkit-transform ease-out 200ms;
 }
-
+.sm-menu-item-mobile{
+    font-size: 20px;
+    color: blue;
+    font-family: -webkit-pictograph;
+    font-weight: 500;
+}
 .menu-open {
     display: none;
 }
@@ -443,10 +458,20 @@ textarea {
 /*End Contact*/
 /* Responsive layout - makes a two column-layout instead of four columns */
 @media screen and (max-width: 1024px) {
+    #sm-menu-block-mobile{
+        display: block;
+    }
+    #sm-menu-block{
+        display: none;
+    }
     .menu {
         height: 85px;
     }
-
+    .menu-item,.menu-open-button{
+        width: 75px;
+        height: 75px;
+        line-height: 70px;
+    }
     .sm-bg-text {
         margin: 0 auto;
         top: 10%;
@@ -463,31 +488,39 @@ textarea {
     }
 
     .menu-open:checked+.menu-open-button {
-        transform: scale(0.8, 0.8) translate3d(0, 0, 0);
+        transform: scale(1.2, 1.2) translate3d(0, 0, 0);
     }
 
     .menu-open:checked~.menu-item:nth-child(3) {
-        transform: scale(0.8, 0.8) translate3d(80px, 0, 0);
+        transform: scale(1.2, 1.2) translate3d(80px, 0, 0);
     }
 
     .menu-open:checked~.menu-item:nth-child(4) {
-        transform: scale(0.8, 0.8) translate3d(160px, 0, 0);
+        transform: scale(1.2, 1.2) translate3d(160px, 0, 0);
     }
 
     .menu-open:checked~.menu-item:nth-child(5) {
-        transform: scale(0.8, 0.8) translate3d(240px, 0, 0);
+        transform: scale(1.2, 1.2) translate3d(240px, 0, 0);
     }
 
     .menu-open:checked~.menu-item:nth-child(6) {
-        transform: scale(0.8, 0.8) translate3d(320px, 0, 0);
+        transform: scale(1.2, 1.2) translate3d(320px, 0, 0);
     }
 }
 
 @media screen and (max-width: 800px) {
+    #sm-menu-block-mobile{
+        display: block;
+    }
+    #sm-menu-block{
+        display: none;
+    }
     .menu {
         height: 85px;
     }
-
+    .menu-item,.menu-open-button{
+        line-height: 70px;
+    }
     .sm-bg-text {
         margin: 0 auto;
         top: 10%;
@@ -504,32 +537,40 @@ textarea {
     }
 
     .menu-open:checked+.menu-open-button {
-        transform: scale(0.8, 0.8) translate3d(0, 0, 0);
+        transform: scale(0.9, 0.9) translate3d(0, 0, 0);
     }
 
     .menu-open:checked~.menu-item:nth-child(3) {
-        transform: scale(0.8, 0.8) translate3d(80px, 0, 0);
+        transform: scale(0.9, 0.9) translate3d(80px, 0, 0);
     }
 
     .menu-open:checked~.menu-item:nth-child(4) {
-        transform: scale(0.8, 0.8) translate3d(160px, 0, 0);
+        transform: scale(0.9, 0.9) translate3d(160px, 0, 0);
     }
 
     .menu-open:checked~.menu-item:nth-child(5) {
-        transform: scale(0.8, 0.8) translate3d(240px, 0, 0);
+        transform: scale(0.9, 0.9) translate3d(240px, 0, 0);
     }
 
     .menu-open:checked~.menu-item:nth-child(6) {
-        transform: scale(0.8, 0.8) translate3d(320px, 0, 0);
+        transform: scale(0.9, 0.9) translate3d(320px, 0, 0);
     }
 }
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 400px) {
+    #sm-menu-block-mobile{
+        display: block;
+    }
+    #sm-menu-block{
+        display: none;
+    }
     .menu {
         height: 85px;
     }
-
+    .menu-item,.menu-open-button{
+        line-height: 70px;
+    }
     .sm-bg-text {
         /* margin: 0 auto; */
         margin: auto;

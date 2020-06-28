@@ -1,7 +1,7 @@
 $(document).ready(function(){
     $('[data-toggle="tooltip"]').tooltip();   
     $('.menu-item').click(function(){
-        $('#menu-open').prop('checked', false);
+        $('.menu-open').prop('checked', false);
         $('body').css('overflow-y','visible');
         $('.sm-container').css('opacity','1');
     });
@@ -12,7 +12,7 @@ $(document).ready(function(){
         $('.menu').css('opacity','1');
         }
         });
-    $("#menu-open").click(function(e, parameters) {
+    $(".menu-open").click(function(e, parameters) {
 
         var nonUI = false;
         try {
@@ -38,7 +38,7 @@ $(document).ready(function(){
         }
     });
     $('.sm-container').click(function(){
-        $('#menu-open').prop('checked', false);
+        $('.menu-open').prop('checked', false);
         $('body').css('overflow-y','visible');
         $('.sm-container').css('opacity','1');
     })

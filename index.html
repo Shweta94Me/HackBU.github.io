@@ -2,17 +2,19 @@
 <html>
 
 <head>
+  <title lang="en">Shweta Mestry | Software Developer</title>
+  <meta name="description" content="Shweta Mestry is experienced Software Developer currently pursuing Master's Degree in Computer Science at Binghamton University, believes in making user centric solution which simplifies the process.">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="css/style1.css?v=1.1" />
+  <link rel="stylesheet" href="css/style1.css?v=1.2" />
 </head>
 
 <body>
-  <nav class="menu">
+  <nav class="menu" id="sm-menu-block">
     <input type="checkbox" href="#" class="menu-open" name="menu-open" id="menu-open" />
     <label class="menu-open-button" for="menu-open">
       <span class="hamburger hamburger-1"></span>
@@ -30,9 +32,22 @@
         class="fa fa-envelope"></i> </a>
 
   </nav>
+  <nav class="menu" id="sm-menu-block-mobile">
+    <input type="checkbox" href="#" class="menu-open" name="menu-open" id="menu-open-mobile" />
+    <label class="menu-open-button" for="menu-open-mobile">
+      <span class="hamburger hamburger-1"></span>
+      <span class="hamburger hamburger-2"></span>
+      <span class="hamburger hamburger-3"></span>
+    </label>
+
+    <a href="#home" class="menu-item"><span class="sm-menu-item-mobile">Home</span></a>
+    <a href="#about" class="menu-item"><span class="sm-menu-item-mobile">About</span></a>
+    <a href="#portfolio" class="menu-item"><span class="sm-menu-item-mobile">Projects</span></a>
+    <a href="#contact" class="menu-item"><span class="sm-menu-item-mobile">Contact</span></a>
+  </nav>
   <div class="sm-container" id="home" style="margin-top:105px;">
     <div class="sm-left-div">
-      <img src="images/circleshapeimage.png" class="sm-profile-img">
+      <img src="images/circleshapeimage.png" alt="profile picture" class="sm-profile-img">
       <div>
         <a href="#"><i class="fa fa-linkedin"></i></a>
         <a href="#"><i class="fa fa-github"></i></a>
@@ -50,27 +65,37 @@
   </div>
   <div class="sm-container" id="about" style="padding:30px;">
     <h2>About</h2>
-    <div class="sm-left-div">
+    <div class="sm-left-div" style="text-align:left">
+      <p>Hello, I am a Software Developer.</p>
+      <p>I really enjoy building applications which open new doors to learn new technologies. I keep my primary motive behind any application that how it is going to benefits user in all possible ways.</p>
+      <p>Master's degree in Computer Science field intruduced and inspired me to work in MERN Stack, Machine Learning and Cloud Computing area.</p>
+      <p>I am looking for a full time software developer roles where I can work in dynamic and growth-oriented environment, and encourage to collaborate with many teams.</p>
+      <p>Here are few technologies which I have been recently working on (You can check detailed view in Portfolio section):</p>
+      <p>* Node.js * Express.js * React * MongoDB * JavaScript(ES6) * Python</p>
+      <p>* HTML5 * CSS3 * Deep Learning</p>
     </div>
-    <div class="sm-right-div">
+    <div class="sm-right-div" style="padding-right:0px;margin-top:0px;">
       <div class="sm-timeline-item" year-is='2019 - Present'>
         <h5>Pursing Master's of Computer Science at Binghamton University, NY, USA</h5>
         <p>
-          I'm speaking with myself, number one, because I have a very good brain and I've said a lot of things. I write
-          the best placeholder text, and I'm the biggest developer on the web by far... While that's mock-ups and this
-          is
-          politics, are they really so different? I think the only card she has is the Lorem card.
+          <b>Course</b>: Algorithms and Data Structure, Programming for Web, Cloud Computing, Operating Systems, Machine
+          Learning, Programming Languages, Computer Security
         </p>
       </div>
 
       <div class="sm-timeline-item" year-is='2016 - 2019'>
         <h5>Worked as a Software Developer at Tata Consultancy Services LTD., India</h5>
-        <p>
-          I'm speaking with myself, number one, because I have a very good brain and I've said a lot of things. I write
-          the best placeholder text, and I'm the biggest developer on the web by far... While that's mock-ups and this
-          is
-          politics, are they really so different? I think the only card she has is the Lorem card.
-        </p>
+        <ul>
+          <li>Accountable for developing and enhancing functional specifications for financial transaction application
+          </li>
+          <li>Worked cross-functionally within and across companies to seamlessly transition design ideas into a
+            successful deployment</li>
+          <li>Established and maintained positive business and customer relationships</li>
+          <li>Pitched ideas to provide a well-designed, structured and creative user interface with various functional
+            qualities</li>
+          <li>Analysed and understand business requirements, architecture approach to achieve high quality and bug-free
+            deliverables</li>
+        </ul>
       </div>
 
       <div class="sm-timeline-item" year-is='2012 - 2016'>
@@ -94,8 +119,8 @@
           <div class="row">
             <div class="col-md-4">
               <div class="card mb-2">
-                <img class="card-img-top"
-                  src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(34).jpg" alt="Card image cap">
+                <img class="card-img-top" alt="project image"
+                  src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(34).jpg">
                 <div class="card-body">
                   <h4 class="card-title">Card title</h4>
                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
@@ -128,8 +153,8 @@
             </div>
             <div class="col-md-4 clearfix d-none d-md-block">
               <div class="card mb-2">
-                <img class="card-img-top"
-                  src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(18).jpg" alt="Card image cap">
+                <img class="card-img-top" alt="project image"
+                  src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(18).jpg">
                 <div class="card-body">
                   <h4 class="card-title">Card title</h4>
                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
@@ -140,8 +165,8 @@
             </div>
             <div class="col-md-4 clearfix d-none d-md-block">
               <div class="card mb-2">
-                <img class="card-img-top"
-                  src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(35).jpg" alt="Card image cap">
+                <img class="card-img-top" alt="project image"
+                  src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(35).jpg">
                 <div class="card-body">
                   <h4 class="card-title">Card title</h4>
                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
@@ -159,8 +184,7 @@
           <div class="row">
             <div class="col-md-4">
               <div class="card mb-2">
-                <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(60).jpg"
-                  alt="Card image cap">
+                <img class="card-img-top" alt="project image" src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(60).jpg">
                 <div class="card-body">
                   <h4 class="card-title">Card title</h4>
                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
@@ -172,8 +196,7 @@
 
             <div class="col-md-4 clearfix d-none d-md-block">
               <div class="card mb-2">
-                <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(47).jpg"
-                  alt="Card image cap">
+                <img class="card-img-top" alt="project image" src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(47).jpg">
                 <div class="card-body">
                   <h4 class="card-title">Card title</h4>
                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
@@ -185,8 +208,7 @@
 
             <div class="col-md-4 clearfix d-none d-md-block">
               <div class="card mb-2">
-                <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(48).jpg"
-                  alt="Card image cap">
+                <img class="card-img-top" alt="project image" src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(48).jpg">
                 <div class="card-body">
                   <h4 class="card-title">Card title</h4>
                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
@@ -203,8 +225,7 @@
           <div class="row">
             <div class="col-md-4">
               <div class="card mb-2">
-                <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Food/4-col/img%20(53).jpg"
-                  alt="Card image cap">
+                <img class="card-img-top" alt="project image" src="https://mdbootstrap.com/img/Photos/Horizontal/Food/4-col/img%20(53).jpg">
                 <div class="card-body">
                   <h4 class="card-title">Card title</h4>
                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
@@ -216,8 +237,7 @@
 
             <div class="col-md-4 clearfix d-none d-md-block">
               <div class="card mb-2">
-                <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Food/4-col/img%20(45).jpg"
-                  alt="Card image cap">
+                <img class="card-img-top" alt="project image" src="https://mdbootstrap.com/img/Photos/Horizontal/Food/4-col/img%20(45).jpg">
                 <div class="card-body">
                   <h4 class="card-title">Card title</h4>
                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
@@ -229,8 +249,7 @@
 
             <div class="col-md-4 clearfix d-none d-md-block">
               <div class="card mb-2">
-                <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Food/4-col/img%20(51).jpg"
-                  alt="Card image cap">
+                <img class="card-img-top" alt="project image" src="https://mdbootstrap.com/img/Photos/Horizontal/Food/4-col/img%20(51).jpg">
                 <div class="card-body">
                   <h4 class="card-title">Card title</h4>
                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
@@ -293,7 +312,7 @@
       </filter>
     </defs>
   </svg>-->
-  <script src="js/script.js?v=1.1"></script>
+  <script src="js/script.js?v=1.2"></script>
 </body>
 
 </html>
