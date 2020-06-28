@@ -300,6 +300,8 @@ h1 {
     position: relative;
     /* color: rgba(0, 0, 0, 0.7); */
     border-left: 3px solid rgba(255, 255, 255, 1.3);
+    /* border-width: 0 0 0 3px;
+    border-color: rgba(255, 255, 255, 1.3); */
 }
 
 .sm-timeline-item p {
@@ -331,13 +333,13 @@ h1 {
     background: white;
 }
 
-.sm-timeline-item:last-child {
+/* .sm-timeline-item:last-child {
     -webkit-border-image: -webkit-gradient(linear, left top, left bottom, color-stop(60%, rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0))) 1 100%;
     -webkit-border-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 60%, rgba(0, 0, 0, 0)) 1 100%;
     -o-border-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 60%, rgba(0, 0, 0, 0)) 1 100%;
     border-image: -webkit-gradient(linear, left top, left bottom, color-stop(60%, rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0))) 1 100%;
     border-image: linear-gradient(to bottom, rgba(255, 255, 255, 1.3) 60%, rgba(0, 0, 0, 0)) 1 100%;
-}
+} */
 
 
 /*End Timeline*/
