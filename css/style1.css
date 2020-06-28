@@ -550,10 +550,10 @@ textarea {
         margin-top: 0px;
     }
 
-    .sm-timeline-item:last-child {
+    /* .sm-timeline-item:last-child {
         /* border-width: thick; */
-        border-left-width: thick;
-    }
+        /* border-left-width: thick;
+    } */
 
     .menu-open:checked+.menu-open-button {
         transform: scale(0.8, 0.8) translate3d(0, 0, 0);
