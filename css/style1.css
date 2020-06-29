@@ -698,12 +698,15 @@ textarea {
 .circular-menu:after {
     display: block;
     content: ' ';
-    width: 60px;
-    height: 60px;
+    /* width: 60px;
+    height: 60px; */
+    width: 0;
+    height: 0;
     border-radius: 50%;
     position: absolute;
     top: 0;
-    right: 10px;
+    /* right: 10px; */
+    right: 0;
     z-index: -2;
     background-color: hsl(4, 98%, 60%);
     transition: all .3s ease;
@@ -711,9 +714,13 @@ textarea {
 
 .circular-menu.active:after {
     /* transform: scale3d(9.5, 9.5, 1); */
-    transform: scale(9.5,9.5) translate3d(0, 0, 0);
-    -webkit-filter: blur(0px);
+    /* transform: scale(9.5,9.5) translate3d(0, 0, 0); */
     transition-timing-function: cubic-bezier(.68, 1.55, .265, 1);
+    width: 400px;
+    height: 400px;
+    top: -200px;
+    left: -200px;
+    -webkit-animation: anim-jelly 0.8s linear forwards;
 }
 
 .circular-menu .items-wrapper {
