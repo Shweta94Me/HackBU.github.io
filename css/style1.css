@@ -479,7 +479,7 @@ textarea {
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 400px) {
     .circular-menu .floating-btn{
-        line-height: 6.1;
+        line-height: 6.9 !important;
     }
     .sm-bg-text {
         /* margin: 0 auto; */
