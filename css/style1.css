@@ -710,7 +710,8 @@ textarea {
 }
 
 .circular-menu.active:after {
-    transform: scale3d(9.5, 9.5, 1);
+    /* transform: scale3d(9.5, 9.5, 1); */
+    transform: scale(7.5,7.5) translate3d(0, 0, 0);
     transition-timing-function: cubic-bezier(.68, 1.55, .265, 1);
 }
 
