@@ -59,8 +59,7 @@ ul {
     border-radius: 50%;
     background-color: hsl(4, 98%, 60%);
     box-shadow: 0 2px 5px 0 hsla(0, 0%, 0%, .26);
-    /* color: hsl(0, 0%, 100%); */
-    color: black;
+    color: hsl(0, 0%, 100%);
     text-align: center;
     line-height: 5.8;
     cursor: pointer;
@@ -90,14 +89,11 @@ ul {
 .circular-menu:after {
     display: block;
     content: ' ';
-    /* width: 60px;
-    height: 60px; */
     width: 0;
     height: 0;
     border-radius: 50%;
     position: absolute;
     top: 0;
-    /* right: 10px; */
     left: 0;
     z-index: -2;
     background-color: hsl(4, 98%, 60%);
@@ -105,8 +101,6 @@ ul {
 }
 
 .circular-menu.active:after {
-    /* transform: scale3d(9.5, 9.5, 1); */
-    /* transform: scale(9.5,9.5) translate3d(0, 0, 0); */
     transition-timing-function: cubic-bezier(.68, 1.55, .265, 1);
     width: 500px;
     height: 500px;
@@ -126,7 +120,6 @@ ul {
     right: .2em;
     z-index: -1;
     display: block;
-    /* text-decoration: none; */
     color: hsl(0, 0%, 100%);
     font-size: 1em;
     width: 75px;
@@ -139,7 +132,6 @@ ul {
 
 .circular-menu.active .menu-item {
     transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    transition-timing-function: cubic-bezier(.68, 1.55, .265, 1);
 }
 
 .circular-menu.active .menu-item:nth-child(1) {
@@ -479,7 +471,7 @@ textarea {
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 400px) {
     .circular-menu .floating-btn{
-        line-height: 6.9 !important;
+        line-height: 5.8 !important;
     }
     .sm-bg-text {
         /* margin: 0 auto; */

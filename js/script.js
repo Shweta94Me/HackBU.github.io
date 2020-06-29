@@ -35,10 +35,12 @@ $(document).ready(function(){
             $('.sm-container').css('opacity','1');
         }
     });
-    $('.sm-container').click(function(){
-        $('.menu-open').prop('checked', false);
-        $('#circularMenu1').toggleClass('active');
-        $('body').css('overflow-y','visible');
-        $('.sm-container').css('opacity','1');
+    $('.sm-container').on('click touchstart', function(){
+        if($('.menu-open').is(":checked")){
+            $('.menu-open').prop('checked', false);
+            $('#circularMenu1').toggleClass('active');
+            $('body').css('overflow-y','visible');
+            $('.sm-container').css('opacity','1');
+        }
     })
   });
