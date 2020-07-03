@@ -25,16 +25,28 @@ h1 {
     font-size: 3em;
 }
 
+h4 {
+    font-size: 20px;
+}
+
 h5 {
     color: lightgreen;
 }
 
 ul {
-    list-style-type: none;
+    padding-inline-start: 16px;
+}
+
+i {
+    cursor: pointer;
+}
+
+i:hover {
+    color: #3B5998;
 }
 
 /*Start Testing for menu --------------------------------------------------------*/
-.menu-open{
+.menu-open {
     width: 60px;
     height: 60px;
     display: block;
@@ -45,6 +57,7 @@ ul {
     opacity: 0;
     cursor: pointer;
 }
+
 .circular-menu {
     position: fixed;
     top: 1em;
@@ -65,9 +78,11 @@ ul {
     cursor: pointer;
     outline: 0;
 }
-.circular-menu:hover{
+
+.circular-menu:hover {
     opacity: 1 !important;
 }
+
 .circular-menu.active .floating-btn {
     box-shadow: inset 0 0 3px hsla(0, 0%, 0%, .3);
 }
@@ -116,17 +131,18 @@ ul {
 
 .circular-menu .menu-item {
     position: absolute;
-    top: .2em;
+    /* top: .2em; */
+    top: 1.2em;
     right: .2em;
     z-index: -1;
     display: block;
     color: hsl(0, 0%, 100%);
     font-size: 1em;
     width: 75px;
-    height: 75px;
+    /* height: 75px; */
     border-radius: 50%;
     text-align: center;
-    line-height: 3.1;
+    /* line-height: 3.1; */
     transition: transform .2s ease, background .2s ease;
 }
 
@@ -194,6 +210,8 @@ ul {
 }
 
 /*End Testing for menu -----------------------------------------------------*/
+
+/*Start Home ----------------------------------------------------------------*/
 
 .fa {
     font-size: xx-large;
@@ -286,11 +304,16 @@ ul {
     text-decoration: none;
 }
 
-/*Start Timeline*/
+/*End Home -----------------------------------------------------------------*/
+/*Start Timeline -----------------------------------------------------------*/
+/* td{
+    width: 150px;
+} */
 .sm-timeline-item {
     padding: 3em 2em 1em;
     position: relative;
     border-left: 3px solid rgba(255, 255, 255, 1.3);
+    text-align: left;
 }
 
 .sm-timeline-item p {
@@ -331,9 +354,9 @@ ul {
 } */
 
 
-/*End Timeline*/
+/*End Timeline ------------------------------------------------------------------------*/
 
-/*Start Portfolio*/
+/*Start Portfolio ---------------------------------------------------------------------*/
 .card {
     box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.8);
     transition: 0.3s;
@@ -346,6 +369,10 @@ ul {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
+/* .card-img-top{
+    width: 100%;
+    height: 25%;
+} */
 .previous {
     background-color: #f1f1f1;
     color: black;
@@ -366,9 +393,9 @@ ul {
     border-radius: 50%;
 }
 
-/*End Portfolio*/
+/*End Portfolio ---------------------------------------------------------------------*/
 
-/*Start Contact*/
+/*Start Contact ---------------------------------------------------------------------*/
 .sm-containerpadding {
     padding-top: 32px !important;
     padding-bottom: 32px !important;
@@ -432,17 +459,22 @@ textarea {
     min-height: 150px;
 }
 
-/*End Contact*/
+/*End Contact -------------------------------------------------------------------------*/
+
 /* Responsive layout - makes a two column-layout instead of four columns */
 @media screen and (max-width: 1024px) {
+    p {
+        font-size: x-large;
+    }
+
     .sm-bg-text {
         margin: 0 auto;
         top: 10%;
     }
 
     .sm-profile-img {
-        width: 60% !important;
-        height: 60% !important;
+        width: 50% !important;
+        height: 50% !important;
     }
 
     .sm-left-div,
@@ -452,6 +484,10 @@ textarea {
 }
 
 @media screen and (max-width: 800px) {
+    p {
+        font-size: 16px;
+    }
+
     .sm-bg-text {
         margin: 0 auto;
         top: 10%;
@@ -470,9 +506,14 @@ textarea {
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 400px) {
-    .circular-menu .floating-btn{
+    p {
+        font-size: 16px;
+    }
+
+    .circular-menu .floating-btn {
         line-height: 5.8 !important;
     }
+
     .sm-bg-text {
         /* margin: 0 auto; */
         margin: auto;
@@ -492,7 +533,8 @@ textarea {
     .sm-left-div,
     .sm-right-div {
         width: 100%;
-        margin-top: 0px;
+        /* margin-top: 0px; */
+        margin-top: 20px;
     }
 
     /* .sm-timeline-item:last-child {
@@ -500,4 +542,3 @@ textarea {
     /* border-left-width: thick;
     } */
 }
-
