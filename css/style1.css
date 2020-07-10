@@ -542,3 +542,31 @@ textarea {
     /* border-left-width: thick;
     } */
 }
+
+/* @media only screen and (orientation: portrait) {
+    .shrink {
+        width: 95%;
+    }
+}
+
+@media only screen and (orientation: landscape) {
+    .shrink{
+        width: 90%;
+    }
+} */
+/* .center {
+    text-align: center;
+    margin: 0 auto;
+} */
+
+@supports(padding: max(0px)){
+    body, main{
+        padding-left: min(0vmin, env(safe-area-inset-left));
+        padding-right: min(0vmin, env(safe-area-inset-right));
+    }
+}
+.shrink{
+  padding: 16px;
+  padding-left: env(safe-area-inset-left); /* Apply safe area */
+  padding-right: env(safe-area-inset-right);
+}
