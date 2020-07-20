@@ -752,7 +752,80 @@ textarea {
             font-size: 5vw !important;
         }
     }
+    @media screen 
+    and (device-width: 375px)
+    and (device-height: 812px)
+    and (orientation: portrait)
+    and (-webkit-device-pixel-ratio: 3){
+        #home{
+            height: 100vh;
+        }
+        p{
+            font-size: 5vw;
+        }
+        .sm-container{
+            font-size: 3vw !important;
+        }
+        table, ul{
+            font-size: 4.5vw !important;
+        }
+        .sm-profile-img {
+            width: 70% !important;
+            height: 70% !important;
+        }
+        .sm-left-div,
+        .sm-right-div {
+            width: 100% !important;
+        }
+        .sm-right-div{
+            margin-top: -5% !important;
+        }
+        .sm-text-highlight {
+            font-size: 7vw;
+        }
+    }
 
+@media screen 
+    and (device-width: 375px)
+    and (device-height: 812px)
+    and (orientation: landscape)
+    and (-webkit-min-device-pixel-ratio: 3){
+        #home{
+            height: 100vh;
+            display: table;
+            clear: both;
+            content: "";
+        }
+        #about{
+            display: table;
+            clear: both;
+            content: "";
+        }
+        p{
+            font-size: 2vw !important;
+        }
+        h5{
+            font-size: 3vw !important;
+        }
+        .sm-container{
+            font-size: 3vw !important;
+        }
+        table, ul{
+            font-size: 2vw !important;
+        }
+        .sm-profile-img {
+            width: 70% !important;
+            height: 70% !important;
+        }
+        .sm-left-div,
+        .sm-right-div {
+            float: left;
+            width: 50%;
+        }
+        .sm-text-highlight {
+            font-size: 5vw !important;
+        }
+    }
 @media screen 
     and (max-width: 300px){
         #home{
