@@ -6,7 +6,10 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-171678815-1"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
     gtag('js', new Date());
 
     gtag('config', 'UA-171678815-1');
@@ -38,9 +41,9 @@
     content="Shweta Mestry is experienced Software Developer currently pursuing Master's Degree in Computer Science at Binghamton University, believes in making user centric solution which simplifies the process.">
   <meta itemprop="keywords"
     content="Shweta Mestry, shweta, mestry, shweta94, shweta94me, Software Developer, github, Binghamton University, front end developer, responsive, javascript, node.js, full stack developer">
-  
 
-  
+
+
 
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:url" content="https://shweta94me.github.io">
@@ -76,31 +79,35 @@
       </menu>
     </div>
   </header>
-  <main class="shrink center">
+  <main>
     <div class="sm-container" id="home">
-      <div class="sm-left-div" style="margin-top:8%">
-        <img src="images/circleshapeimage.png" alt="profile picture" class="sm-profile-img">
-        <div>
-          <a href="https://www.linkedin.com/in/shweta94"><i class="fa fa-linkedin"></i></a>
-          <a href="https://github.com/Shweta94Me"><i class="fa fa-github"></i></a>
-          <a href="http://www.facebook.com/mestryshweta30"><i class="fa fa-facebook"></i></a>
+      <div class="horizontally-vertically-centered">
+        <div class="sm-left-div" style="margin-top:8%">
+          <img src="images/circleshapeimage.png" alt="profile picture" class="sm-profile-img">
+          <div>
+            <a href="https://www.linkedin.com/in/shweta94"><i class="fa fa-linkedin"></i></a>
+            <a href="https://github.com/Shweta94Me"><i class="fa fa-github"></i></a>
+            <a href="http://www.facebook.com/mestryshweta30"><i class="fa fa-facebook"></i></a>
+          </div>
         </div>
-      </div>
-      <div class="sm-right-div" style="margin-top:8%">
-        <h2>Hello everybody, I am <p class="sm-text-highlight">SHWETA MESTRY.</p>
-        </h2>
-        <p>Computer Science Graduate Student at Binghamton University</p>
-        <p><b>Experienced Software Developer, believe in making user centric solution which simplifies the process.</b>
-        </p>
-        <p><a href="https://www.dropbox.com/s/yn77d2rlmmhjsef/Resume.pdf?dl=0" target="_blank" style="text-decoration:none"><button class="sm-btn"><i
-                class="fa fa-external-link" style="padding:0px !important"></i> Resume</a></button></p>
+        <div class="sm-right-div" style="margin-top:8%">
+          <h2>Hello everybody, I am <p class="sm-text-highlight">SHWETA MESTRY.</p>
+          </h2>
+          <p>Computer Science Graduate Student at Binghamton University</p>
+          <p><b>Experienced Software Developer, believe in making user centric solution which simplifies the process.</b>
+          </p>
+          <p><a href="https://www.dropbox.com/s/yn77d2rlmmhjsef/Resume.pdf?dl=0" target="_blank"
+              style="text-decoration:none"><button class="sm-btn"><i class="fa fa-external-link"
+                  style="padding:0px !important"></i> Resume</a></button></p>
+        </div>
       </div>
     </div>
     <div class="sm-container" id="about"
       style="padding:30px;background:linear-gradient(to left, #00cc99 0%, #009688 100%);">
       <h2>About</h2>
       <div class="sm-left-div" style="text-align:left">
-        <p>Hello, I am a Software Developer currently pursing Master's in Computer Science from Binghamton University, New
+        <p>Hello, I am a Software Developer currently pursing Master's in Computer Science from Binghamton University,
+          New
           York.</p>
         <p>I enjoy building applications which open doors to learn new technologies. I keep my primary motive
           behind any application that how it is going to benefits user in all possible ways.</p>
@@ -154,253 +161,179 @@
     </div>
     <div class="sm-container" id="portfolio" style="padding:30px;">
       <h2>Portfolio</h2>
-      <div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel">
-        <!--Slides-->
-        <div class="carousel-inner" role="listbox">
-          <!--First Slide-->
+      <!--Carousel starts-->
+      <div id="CarouselTest" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#CarouselTest" data-slide-to="0" class="active"></li>
+          <li data-target="#CarouselTest" data-slide-to="1"></li>
+          <li data-target="#CarouselTest" data-slide-to="2"></li>
+          <li data-target="#CarouselTest" data-slide-to="3"></li>
+          <li data-target="#CarouselTest" data-slide-to="4"></li>
+        </ol>
+        <div class="carousel-inner">
           <div class="carousel-item active">
-            <div class="row">
-              <div class="col-md-4" style="float:left">
-                <div class="card mb-2">
-                  <img class="card-img-top" alt="project image" src="images/Project1.jpg">
-                  <div class="card-body">
-                    <h4 class="card-title">Face Recognition based Online Exam</h4>
-                    <p class="card-text">NodeJS Docker Kubernetes Microservice GCP MongoDB YAML</p>
-                    <i class="fa fa-plus-circle" style="color:red" data-toggle="modal"
-                      data-target="#exampleModalCenter"></i>
-                    <a href="https://github.com/sid94/Container-based-Authenticated-Online-Exam#demo"><i
-                        class="fa fa-github-alt"></i></a>
-                    <a hred="#"><i class="fa fa-eye"></i></a>
-                    <!-- Modal -->
-                    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
-                      aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                      <div class="modal-dialog modal-dialog-centered" role="document">
-                        <div class="modal-content">
-                          <div class="modal-header">
-                            <h4 class="modal-title" id="exampleModalLongTitle">Face Recognition based Online Exam</h4>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                              <span aria-hidden="true">&times;</span>
-                            </button>
-                          </div>
-                          <div class="modal-body">
-                            <table>
-                              <tr>
-                                <td>In COVID situation, many universities might be wondering how they should take online
-                                  exam which is authenticated and more reliable. To resolve this conundrum, thought of
-                                  developing
-                                  a microservice based web application which authenticate student based upon registered
-                                  face ID and then he can start his exam. Used NodeJS (ES6) as a back-end and MongoDB to
-                                  fetch random question per student from data store.
-                                  Dockerized each service layer and deployed them on GCP Kubernetes where each layer
-                                  horizontally scalable, capabale to perform load balancing.
-                                </td>
-                              </tr>
-                              <tr>
-                                <td>More Contributer: Siddhesh Kolhapure <i class="fa fa-external-link"
-                                    style="padding:0px !important"></i>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td><a href="https://github.com/Shweta94Me/Container-based-Authenticated-Online-Exam"><i
-                                      class="fa fa-github-alt"></i></a>
-                                  <a hred="#"><i class="fa fa-eye"></i></a>
-                                </td>
-                              </tr>
-                            </table>
-                          </div>
-                          <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+            <!--Card starts here-->
+            <div class="card-content">
+              <div class="card">
+                <div class="row">
+                  <div class="col-sm-5">
+                    <img class="d-block w-100 h-100" src="images/Project1.jpg" alt="project-image">
                   </div>
-                </div>
-              </div>
-              <div class="col-md-4" style="float:left">
-                <div class="card mb-2">
-                  <img class="card-img-top" alt="project image" src="images/Project2.jpg">
-                  <div class="card-body">
-                    <h4 class="card-title">Blog Query System</h4>
-                    <p class="card-text">JavaScript NodeJS MongoDB Express.js Mustache jQuery Axios</p>
-                    <i class="fa fa-plus-circle" style="color:red" data-toggle="modal" data-target="#model2"></i>
-                    <a href="https://github.com/Shweta94Me/Blog-Query-System"><i class="fa fa-github-alt"></i></a>
-                  </div>
-                  <!-- Modal -->
-                  <div class="modal fade" id="model2" tabindex="-1" role="dialog"
-                    aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered" role="document">
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <h4 class="modal-title">Blog Query System</h4>
-                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                          </button>
-                        </div>
-                        <div class="modal-body">
-                          <table>
-                            <tr>
-                              <td>Started from in-memory data storage to MongoDB, gradually developed an application which
-                                maintains blog data such as users, articles and comments. Incorporated REST-based services
-                                and HATEOAS to smoothly tranverse with hypermedia links.
-                                Designed UI layer with Mustache and connected browser with NodeJS via Axios.</td>
-                            </tr>
-                            <tr>
-                              <td><a href="https://github.com/Shweta94Me/Blog-Query-System"><i
-                                    class="fa fa-github-alt"></i></a></td>
-                            </tr>
-                          </table>
-                        </div>
-                        <div class="modal-footer">
-                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4" style="float:left">
-                <div class="card mb-2">
-                  <img class="card-img-top" alt="project image" src="images/Project3.jpg">
-                  <div class="card-body">
-                    <h4 class="card-title">NYC Crime Data Analysis and Visualization</h4>
-                    <p class="card-text">Python Folium Pandas Juypter Notebook Machine Learning</p>
-                    <i class="fa fa-plus-circle" style="color:red" data-toggle="modal" data-target="#model3"></i>
-                    <a href="https://github.com/Shweta94Me/HackBU-2020-NYC-Crime-Data-Analysis-and-Visualization"><i
-                        class="fa fa-github-alt"></i></a>
-                  </div>
-                  <!-- Modal -->
-                  <div class="modal fade" id="model3" tabindex="-1" role="dialog"
-                    aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered" role="document">
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <h4 class="modal-title">NYC Crime Data Analysis and Visualization</h4>
-                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                          </button>
-                        </div>
-                        <div class="modal-body">
-                          <table>
-                            <tr>
-                              <td>As a part of Hackathon at Binghamton University, built NYC crime Analysis which pin
-                                points those areas with specific tag based upon severity.</td>
-                            </tr>
-                            <tr>
-                              <td>More Contributer: Siddhesh Kolhapure <i class="fa fa-external-link"
-                                  style="padding:0px !important"></i>
-                                Tejesh Agrawal <i class="fa fa-external-link" style="padding:0px !important"></i></td>
-                            </tr>
-                            <tr>
-                              <td><a
-                                  href="https://github.com/Shweta94Me/HackBU-2020-NYC-Crime-Data-Analysis-and-Visualization"><i
-                                    class="fa fa-github-alt"></i></a></td>
-                            </tr>
-                          </table>
-                        </div>
-                        <div class="modal-footer">
-                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                        </div>
-                      </div>
+                  <div class="col-sm-7 px-3">
+                    <div class="card-block px-6">
+                      <h4 class="card-title">Face Recognition based Online Exam | 
+                      <a href="https://github.com/Shweta94Me/Container-based-Authenticated-Online-Exam">View Code</a> | 
+                      <a href="https://github.com/Shweta94Me/Container-based-Authenticated-Online-Exam#demo">Demo</a>
+                      </h4>
+                      <p class="card-text">
+                        In COVID situation, many universities might be wondering how they should take online
+                        exam which is authenticated and more reliable. To resolve this conundrum, developed
+                        a microservice based full stack web application which enrolls student with live Face ID. Only registered students are authorized to take online exam.
+                      </p>
+                      <p class="card-text">
+                        Technologies Used : NodeJS, Docker, Kubernetes, Microservice, GCP, MongoDB, YAML, Docker-Compose, HTML, CSS
+                      </p>
+                      <p class="card-text">
+                        More Contributer: Siddhesh Kolhapure <a href="www.siddheshkolhapure.com" target="_blank"><i class="fa fa-external-link" style="padding:0px !important"></i></a>
+                      </p>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
+            <!--Card ends here-->
           </div>
-          <!--End First Slide-->
-          <!--Second slide-->
-          <!--<div class="carousel-item">
-
-            <div class="row">
-              <div class="col-md-4" style="float:left">
-                <div class="card mb-2">
-                  <img class="card-img-top" alt="project image"
-                    src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(60).jpg">
-                  <div class="card-body">
-                    <h4 class="card-title">Project Name</h4>
-                    <p class="card-text">Work in progress</p>
+          <div class="carousel-item">
+            <!--Card starts here-->
+            <div class="card-content">
+              <div class="card">
+                <div class="row">
+                  <div class="col-sm-5">
+                    <img class="d-block w-100 h-100" src="images/Project2.jpg" alt="project-image">
                   </div>
-                </div>
-              </div>
-
-              <div class="col-md-4" style="float:left">
-                <div class="card mb-2">
-                  <img class="card-img-top" alt="project image"
-                    src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(47).jpg">
-                  <div class="card-body">
-                    <h4 class="card-title">Project Name</h4>
-                    <p class="card-text">Work in progress</p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-md-4" style="float:left">
-                <div class="card mb-2">
-                  <img class="card-img-top" alt="project image"
-                    src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(48).jpg">
-                  <div class="card-body">
-                    <h4 class="card-title">Project Name</h4>
-                    <p class="card-text">Work in progress</p>
+                  <div class="col-sm-7 px-3">
+                    <div class="card-block px-6">
+                      <h4 class="card-title">Blog Query System | 
+                      <a href="https://github.com/Shweta94Me/Blog-Query-System">View Code</a> | 
+                      <a href="https://github.com/Shweta94Me/Blog-Query-System/tree/master/submit/prj4-sol#demo">Demo</a>
+                      </h4>
+                      <p class="card-text">
+                        Started from in-memory data storage to MongoDB, gradually developed an application which
+                        maintains blog data such as users, articles and comments. Incorporated REST-based services
+                        and HATEOAS to smoothly tranverse with hypermedia links. Designed UI layer with Mustache and connected browser with NodeJS via Axios.
+                      </p>
+                      <p class="card-text">
+                        Technologies Used: Node.js, MongoDB, Express.js, Mustache, jQuery, Axios
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>-->
-          <!--/.Second slide-->
-          <!--Third slide-->
-          <!--<div class="carousel-item">
-            <div class="row">
-              <div class="col-md-4">
-                <div class="card mb-2">
-                  <img class="card-img-top" alt="project image"
-                    src="https://mdbootstrap.com/img/Photos/Horizontal/Food/4-col/img%20(53).jpg">
-                  <div class="card-body">
-                    <h4 class="card-title">Card title</h4>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                      card's content.</p>
-                    <a class="btn btn-primary">Button</a>
+            <!--Card ends here-->
+          </div>
+          <div class="carousel-item">
+            <!--Card starts here-->
+            <div class="card-content">
+              <div class="card">
+                <div class="row">
+                  <div class="col-sm-5">
+                    <img class="d-block w-100 h-100" src="images/Project3.jpg" alt="project-image">
                   </div>
-                </div>
-              </div>
-
-              <div class="col-md-4 clearfix d-none d-md-block">
-                <div class="card mb-2">
-                  <img class="card-img-top" alt="project image"
-                    src="https://mdbootstrap.com/img/Photos/Horizontal/Food/4-col/img%20(45).jpg">
-                  <div class="card-body">
-                    <h4 class="card-title">Card title</h4>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                      card's content.</p>
-                    <a class="btn btn-primary">Button</a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-md-4 clearfix d-none d-md-block">
-                <div class="card mb-2">
-                  <img class="card-img-top" alt="project image"
-                    src="https://mdbootstrap.com/img/Photos/Horizontal/Food/4-col/img%20(51).jpg">
-                  <div class="card-body">
-                    <h4 class="card-title">Card title</h4>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                      card's content.</p>
-                    <a class="btn btn-primary">Button</a>
+                  <div class="col-sm-7 px-3">
+                    <div class="card-block px-6">
+                      <h4 class="card-title">NYC Crime Data Analysis and Visualization | 
+                      <a href="https://github.com/Shweta94Me/HackBU-2020-NYC-Crime-Data-Analysis-and-Visualization">View Code</a> | 
+                      <a href="https://github.com/Shweta94Me/HackBU-2020-NYC-Crime-Data-Analysis-and-Visualization#hackbu-2020-nyc-crime-data-analysis-and-visualization">Demo</a>
+                      </h4>
+                      <p class="card-text">
+                        As a part of Hackathon at Binghamton University, built NYC crime Analysis which pin
+                        points those areas with specific tag based upon severity.
+                      </p>
+                      <p class="card-text">
+                        More Contributer: Siddhesh Kolhapure <a href="www.siddheshkolhapure.com" target="_blank"><i class="fa fa-external-link" style="padding:0px !important"></i></a> Tejesh Agrawal <a href="https://www.linkedin.com/in/tejesh-agrawal-23219a50/" target="_blank"><i class="fa fa-external-link" style="padding:0px !important"></i></a>
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>-->
-          <!--/.Third slide-->
-        </div>
-        <!--End Slides-->
-        <!--Controls-->
-        <div class="controls-top">
-          <a class="pager" href="#multi-item-example" data-slide="prev">Prev</a>
-          <a class="pager" href="#multi-item-example" data-slide="next">Next</a>
+            <!--Card ends here-->
+          </div>
+          <div class="carousel-item">
+            <!--Card starts here-->
+            <div class="card-content">
+              <div class="card">
+                <div class="row">
+                  <div class="col-sm-5">
+                    <img class="d-block w-100 h-100" src="images/Project2.jpg" alt="project-image">
+                  </div>
+                  <div class="col-sm-7 px-3">
+                    <div class="card-block px-6">
+                      <h4 class="card-title">Streaming Twitter Sentiment Analysis | 
+                      <a href="https://github.com/Shweta94Me/Deep-Learning/tree/master/SentimentAnalysis">View Code</a> | 
+                      <a href="https://github.com/Shweta94Me/Deep-Learning/tree/master/SentimentAnalysis">Demo</a>
+                      </h4>
+                      <p class="card-text">
+                        Developed a full stack web application to determine tweets' sentiments where we processed 1.6 million tweets using the Deep Learning LSTM model. 
+                        Core component is event driven microservice implemented with Node.js and Apache Kafka as a publisher-subcriber message bus to provide continous stream of tweets.
+                        Containerized each microservice components with docker compose.
+                      </p>
+                      <p class="card-text">
+                        Technologies Used: Deep Learning LSTM model, Python, Google Colab, Apache Kafka, Node.js, React.js, HTML, CSS, Socket.io, Webpack, MongoDB, Docker, Docker-Compose, Event-Emitter
+                      </p>
+                      <p class="card-text">
+                        More Contributer: Siddhesh Kolhapure <a href="www.siddheshkolhapure.com" target="_blank"><i class="fa fa-external-link" style="padding:0px !important"></i></a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--Card ends here-->
+          </div>
+          <div class="carousel-item">
+            <!--Card starts here-->
+            <div class="card-content">
+              <div class="card">
+                <div class="row">
+                  <div class="col-sm-5">
+                    <img class="d-block w-100 h-100" src="images/Project5.jpg" alt="project-image">
+                  </div>
+                  <div class="col-sm-7 px-3">
+                    <div class="card-block px-6">
+                      <h4 class="card-title">Spam-Ham Classifier using Deep Learning | 
+                      <a href="https://github.com/Shweta94Me/Deep-Learning/tree/master/SpamHam">View Code</a> | 
+                      <a href="https://github.com/Shweta94Me/Deep-Learning/tree/master/SpamHam#demo">Demo</a>
+                      </h4>
+                      <p class="card-text">
+                        Processed labelled messages using Deep Learning LSTM model. Exposed built model to flask API. React based UI consumes 
+                        exposed API to pass preprocessed user entered message and displays classification of entered message.
+                      </p>
+                      <p class="card-text">
+                        Technologies Used: Tensorflow, Keras, Python, Flask API, Deep Learning, LSTM, React, HTML
+                      </p>
+                      <p class="card-text">
+                        More Contributer: Siddhesh Kolhapure <a href="www.siddheshkolhapure.com" target="_blank"><i class="fa fa-external-link" style="padding:0px !important"></i></a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--Card ends here-->
+          </div>
+          <a class="carousel-control-prev" href="#CarouselTest" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#CarouselTest" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
         </div>
       </div>
-      <!--End Carousel-->
+      <!--Carousel ends-->
     </div>
     <div class="sm-container sm-containerpadding" id="contact"
       style="padding:30px;background:linear-gradient(to left, #00cc99 0%, #009688 100%);">

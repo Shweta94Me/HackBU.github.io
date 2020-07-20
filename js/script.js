@@ -1,6 +1,6 @@
 $(document).ready(function () {
     screenHeight = screen.height + 'px';
-    $('#home').css('height', screenHeight);
+    // $('#home').css('height', '100vh');
     $('[data-toggle="tooltip"]').tooltip()
     $('.menu-item').click(function () {
         $('.menu-open').prop('checked', false);
@@ -65,4 +65,7 @@ $(document).ready(function () {
         $('.col-md-4',this).height(highestBox);
                       
       }); 
+    //   $(window).on('resize', ()=>{
+    //     $('#home').css('height', '100vh');
+    //   })
 });
