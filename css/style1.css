@@ -50,8 +50,8 @@ i:hover {
 
 /*Start Testing for menu --------------------------------------------------------*/
 .menu-open {
-    width: 60px;
-    height: 60px;
+    width: 40px;
+    height: 40px;
     display: block;
     position: absolute;
     left: 11px;
@@ -70,14 +70,14 @@ i:hover {
 
 .circular-menu .floating-btn {
     display: block;
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
     background-color: hsl(4, 98%, 60%);
     box-shadow: 0 2px 5px 0 hsla(0, 0%, 0%, .26);
     color: hsl(0, 0%, 100%);
     text-align: center;
-    line-height: 5.8;
+    line-height: 4.5;
     cursor: pointer;
     outline: 0;
 }
@@ -140,7 +140,7 @@ i:hover {
     z-index: -1;
     display: block;
     color: hsl(0, 0%, 100%);
-    font-size: 1em;
+    font-size: 0;
     width: 75px;
     /* height: 75px; */
     border-radius: 50%;
@@ -745,7 +745,7 @@ textarea {
             font-size: 5vw;
         }
         .circular-menu .floating-btn {
-            line-height: 5.8 !important;
+            /* line-height: 5.8 !important; */
         }
         .sm-container{
             font-size: 3vw !important;
@@ -789,7 +789,7 @@ textarea {
             font-size: 2vw !important;
         }
         .circular-menu .floating-btn {
-            line-height: 5.8 !important;
+            /* line-height: 5.8 !important; */
         }
         h5{
             font-size: 3vw !important;
