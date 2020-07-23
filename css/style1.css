@@ -224,7 +224,7 @@ i:hover {
     position: relative;
 }
 .horizontally-vertically-centered{
-    position: absolute;
+    position: initial;
     top: 50%;
     transform: translateY(-50%);
 }
