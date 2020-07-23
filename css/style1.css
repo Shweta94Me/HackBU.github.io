@@ -47,6 +47,15 @@ i {
 i:hover {
     color: #3B5998;
 }
+#loading {
+    background: url('../images/loader.gif') no-repeat center center #009688;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 9999999;
+}
 
 /*Start Testing for menu --------------------------------------------------------*/
 .menu-open {

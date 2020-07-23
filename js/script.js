@@ -1,4 +1,7 @@
 $(document).ready(function () {
+    setTimeout(()=>{
+        $('#loading').fadeOut();
+    }, 1000);
     screenHeight = screen.height + 'px';
     // $('#home').css('height', '100vh');
     $('[data-toggle="tooltip"]').tooltip()
