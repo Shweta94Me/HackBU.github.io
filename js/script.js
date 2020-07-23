@@ -74,8 +74,8 @@ $(document).ready(function () {
 
     //Loop all cards and check height, if bigger than max then save it
     for (let i = 0; i < cards.length; i++) {
-    if (maxHeight < $(cards[i]).outerHeight()) {
-        maxHeight = $(cards[i]).outerHeight();
+    if (maxHeight < $(cards[i]).innerHeight()) {
+        maxHeight = $(cards[i]).innerHeight();
     }
     }
     //Set ALL card bodies to this height
