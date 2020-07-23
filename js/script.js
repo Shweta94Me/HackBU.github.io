@@ -68,4 +68,18 @@ $(document).ready(function () {
     //   $(window).on('resize', ()=>{
     //     $('#home').css('height', '100vh');
     //   })
+    // Get cards
+    let cards = $('.card-block');
+    let maxHeight = '0';
+
+    //Loop all cards and check height, if bigger than max then save it
+    for (let i = 0; i < cards.length; i++) {
+    if (maxHeight < $(cards[i]).outerHeight()) {
+        maxHeight = $(cards[i]).outerHeight();
+    }
+    }
+    //Set ALL card bodies to this height
+    for (let i = 0; i < cards.length; i++) {
+    $(cards[i]).height(maxHeight);
+    }
 });
